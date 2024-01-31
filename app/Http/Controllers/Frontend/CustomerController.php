@@ -72,7 +72,7 @@ public function profileupdate(Request $request) {
     User::create([
         'name'=>$request->name,
             'email'=>$request->email,
-            'rol e'=>'student',
+            'role'=>'student',
             'password'=>bcrypt($request->password),
 
 
