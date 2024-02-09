@@ -57,7 +57,7 @@
                 @endguest
                 @auth
                 <a href="{{route('customer.logout')}}">Logout</a>|
-                <a href="{{route('profile.view')}}">Profile</a>|
+                <a href="{{route('profile.view')}}">{{auth()->user()->name}}</a>|
                 <p class="text-muted font-size-sm">{{auth()->user()->role}}</p>
                 @endauth
 
